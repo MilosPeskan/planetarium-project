@@ -63,11 +63,23 @@ body{
 
 .nav-bar{
     position: sticky;
+    display: flex;
     top: 0;
     background-color: #212331;
     width: 100%;
     height: 7vh;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.nav-bar .nav-bar-elements{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    font-size: large;
+    font-family: 'Poppins';
 }
 
 .content{
@@ -89,7 +101,7 @@ body{
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    background-image: url("assets/stars-background.png");
+    background-image: url("../assets/stars-background.png");
     /*transform-style: preserve-3d;
     animation: autoRun 20s linear infinite;*/
     z-index: 1;
@@ -185,6 +197,7 @@ body{
     height: 100%;
     border-radius: 100%;
     opacity: 0;
+    z-index: 20;
 }
 
 .system .astro-obj .planet-container .planet .ripple{
