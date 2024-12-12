@@ -108,6 +108,73 @@ body{
     cursor: pointer;
     filter: invert(1);
 }
+.nav-bar .nav-bar-elements .hop{
+    width: 70%;
+    padding: 0;
+    text-align: center;
+    transform: translateX(-5%);
+}
+.nav-bar .nav-bar-elements .hop .jump{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+}
+.nav-bar .nav-bar-elements .hop .jump li{
+    text-align: center;
+}
+.nav-bar .nav-bar-elements .hop .jump li a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(10px, 6vw, 15px);
+}
+.nav-bar .nav-bar-elements .hop .jump li a:hover{
+    color: #a8e1c6;
+}
+.nav-bar .nav-bar-elements .hop .jump .here a{
+    font-size: clamp(15px, 6vw, 25px);
+    color: #3BE798;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+.nav-bar .nav-bar-elements .hop .jump .here a:hover{
+    color: #3BE798;
+}
+.nav-bar .nav-bar-elements .minihop{
+    display: none;
+    width: 70%;
+    padding: 0;
+    text-align: center;
+    transform: translateX(-10%);
+}
+.nav-bar .nav-bar-elements .minihop .jump{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+}
+.nav-bar .nav-bar-elements .minihop .jump li{
+    text-align: center;
+}
+.nav-bar .nav-bar-elements .minihop .jump li a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(10px, 6vw, 15px);
+}
+.nav-bar .nav-bar-elements .minihop .jump li a:hover{
+    color: #a8e1c6;
+}
+.nav-bar .nav-bar-elements .minihop .jump .here a{
+    font-size: clamp(15px, 6vw, 25px);
+    color: #3BE798;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+.nav-bar .nav-bar-elements .minihop .jump .here a:hover{
+    color: #3BE798;
+}
 .nav-bar .nav-bar-elements .filter{
     position: relative;
     height: auto;
@@ -923,8 +990,13 @@ div[class^='card']:hover .addCard::after{
 
 
   @media (max-width:600px){
+    .nav-bar .nav-bar-elements .hop{display: none;}
+    .nav-bar .nav-bar-elements .minihop{display: block;}
     .system{
         height: 40vh;
+    }
+    main .metal-div h1::after{
+        -webkit-text-stroke: 1px #212331;
     }
     main .solar-colection{
         display: flex;
