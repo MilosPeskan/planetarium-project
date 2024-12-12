@@ -263,21 +263,8 @@ body{
     align-items: center;
     overflow: hidden;
     background-image: url("../assets/stars-background.png");
-    /*transform-style: preserve-3d;
-    animation: autoRun 20s linear infinite;*/
     z-index: 1;
-    /*transform: rotateZ(-14deg);*/
 }
-
-
-/*@keyframes autoRun {
-    from{
-        transform: rotateZ(0deg);
-    }
-    to{
-        transform: rotateZ(10deg);
-    }
-}*/
 
 .sun{
     position: relative;
@@ -295,7 +282,6 @@ body{
     object-fit: contain;
     width: 200%;
     height: 100%;
-    /*transform: translateX(-15vw);*/
     aspect-ratio: 1/1;
 }
 
@@ -450,14 +436,12 @@ main{
     position: relative;
     padding-top: 1rem;
     width: 100%;
-    /* background-color: #0ff; */
 }
 
 main .metal-div{
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* background-color: red; */
     margin-bottom: 4rem;
     display: flex;
     z-index: 2;
@@ -584,8 +568,6 @@ main .solar-colection .vision .glasses{
     z-index: -1;
 }
 
-
-
 .vision .glasses::after{
     position: absolute;
     bottom:0;
@@ -600,11 +582,6 @@ main .solar-colection .vision .glasses{
     filter:blur(10px);
     transition: 0.5s;
 }
-
-
-
-
-
 
 .content{
     width: 100%;
@@ -815,11 +792,6 @@ div[class^='card']:hover .addCard::after{
 }
 
 
-
-
-
-
-
 .fcontent{
     width: 100%;
     height: auto;
@@ -842,9 +814,9 @@ div[class^='card']:hover .addCard::after{
     color: #fff;
     border: 1px solid #333;
     box-sizing: border-box;
-  }
+}
   
-  .ftitle {
+.ftitle {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -853,21 +825,21 @@ div[class^='card']:hover .addCard::after{
     align-items: center;
     padding-left: 30px;
     color: #00bfff;
-  }
+}
   
-  .ftitle::before {
+.ftitle::before {
     width: 18px;
     height: 18px;
-  }
+}
   
-  .ftitle::after {
+.ftitle::after {
     width: 18px;
     height: 18px;
     animation: pulse 1s linear infinite;
-  }
+}
   
-  .ftitle::before,
-  .ftitle::after {
+.ftitle::before,
+.ftitle::after {
     position: absolute;
     content: "";
     height: 16px;
@@ -875,37 +847,37 @@ div[class^='card']:hover .addCard::after{
     border-radius: 50%;
     left: 0px;
     background-color: #00bfff;
-  }
+}
   
-  .message, 
-  .signin {
+.message, 
+.signin {
     font-size: 14.5px;
     color: rgba(255, 255, 255, 0.7);
-  }
+}
   
-  .signin {
+.signin {
     text-align: center;
-  }
+}
   
-  .signin a:hover {
+.signin a:hover {
     text-decoration: underline royalblue;
-  }
+}
   
-  .signin a {
+.signin a {
     color: #00bfff;
-  }
+}
   
-  .flex {
+.flex {
     display: flex;
     width: 100%;
     gap: 6px;
-  }
+}
   
-  .form label {
+.form label {
     position: relative;
-  }
+}
   
-  .form label .input {
+.form label .input {
     background-color: #333;
     color: #fff;
     width: 95%;
@@ -913,13 +885,13 @@ div[class^='card']:hover .addCard::after{
     outline: 0;
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 10px;
-  }
+}
 
-  .form label .two{
+.form label .two{
     width: 90%;
-  }
+}
   
-  .form label .input + span {
+.form label .input + span {
     color: rgba(255, 255, 255, 0.5);
     position: absolute;
     left: 10px;
@@ -927,26 +899,26 @@ div[class^='card']:hover .addCard::after{
     font-size: 0.9em;
     cursor: text;
     transition: 0.3s ease;
-  }
+}
   
-  .form label .input:placeholder-shown + span {
+.form label .input:placeholder-shown + span {
     top: 12.5px;
     font-size: 0.9em;
-  }
+}
   
-  .form label .input:focus + span,
-  .form label .input:valid + span {
+.form label .input:focus + span,
+.form label .input:valid + span {
     color: #00bfff;
     top: 0px;
     font-size: 0.7em;
     font-weight: 600;
-  }
+}
   
-  .input {
+.input {
     font-size: medium;
-  }
+}
   
-  .submit {
+.submit {
     border: none;
     outline: none;
     padding: 10px;
@@ -955,13 +927,13 @@ div[class^='card']:hover .addCard::after{
     font-size: 16px;
     transform: .3s ease;
     background-color: #00bfff;
-  }
+}
   
-  .submit:hover {
+.submit:hover {
     background-color: #00bfff96;
-  }
+}
   
-  @keyframes pulse {
+@keyframes pulse {
     from {
       transform: scale(0.9);
       opacity: 1;
@@ -971,25 +943,25 @@ div[class^='card']:hover .addCard::after{
       transform: scale(1.8);
       opacity: 0;
     }
-  }
+}
 
-  .fcontent .contact{
+.fcontent .contact{
     width: 50%;
     height: 80%;
     border-radius: 50px;
     padding: 15px;
     box-shadow: 20px 20px 60px #bebebe,
                -20px -20px 60px #ffffff;
-  }
+}
 
-  .fcontent .contact .socials{
+.fcontent .contact .socials{
     width: 100%;
     display: flex;
     justify-content: space-between;
-  }
+}
 
 
-  @media (max-width:600px){
+@media (max-width:600px){
     .nav-bar .nav-bar-elements .hop{display: none;}
     .nav-bar .nav-bar-elements .minihop{display: block;}
     .system{
